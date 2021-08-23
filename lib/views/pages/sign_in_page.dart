@@ -1,4 +1,5 @@
 import 'package:ecommer_app/theme.dart';
+import 'package:ecommer_app/views/pages/home/main_page.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -153,7 +154,8 @@ class SignInPage extends StatelessWidget {
     Widget sigInButton() {
       return InkWell(
         onTap: () {
-          print('hallo');
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => MainPage()));
         },
         child: Container(
           margin: EdgeInsets.only(top: 30),
