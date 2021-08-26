@@ -16,10 +16,15 @@ class DetailChatPage extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         child: Row(
           children: [
-            Image.asset(
-              'assets/button_back.png',
-              height: 16,
-              fit: BoxFit.cover,
+            InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: Image.asset(
+                'assets/button_back.png',
+                height: 16,
+                fit: BoxFit.cover,
+              ),
             ),
             SizedBox(
               width: 25,

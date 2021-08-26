@@ -86,7 +86,10 @@ class ChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [header(), content()],
+      children: [
+        header(),
+        content(),
+      ],
     );
   }
 }
