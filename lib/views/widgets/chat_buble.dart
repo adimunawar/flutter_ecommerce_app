@@ -64,11 +64,7 @@ class ChatBuble extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  // constraints: BoxConstraints(
-                  //   maxWidth: MediaQuery.of(context).size.width * 0.6,
-                  // ),
                   padding: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                  // height: 41,
                   decoration: BoxDecoration(
                       border: Border.all(width: 1, color: primaryColor),
                       borderRadius: BorderRadius.all(Radius.circular(8))),

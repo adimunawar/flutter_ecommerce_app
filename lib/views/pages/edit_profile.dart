@@ -15,7 +15,11 @@ class EditProfile extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset("assets/icon_x.png"),
+              InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Image.asset("assets/icon_x.png")),
               Text(
                 "Edit Profile",
                 style:
