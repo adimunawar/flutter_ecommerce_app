@@ -1,4 +1,5 @@
 import 'package:ecommer_app/theme.dart';
+import 'package:ecommer_app/views/pages/cart_page.dart';
 import 'package:ecommer_app/views/pages/home/chat_page.dart';
 import 'package:ecommer_app/views/pages/home/home_page.dart';
 import 'package:ecommer_app/views/pages/home/profile_page.dart';
@@ -17,7 +18,10 @@ class _MainPageState extends State<MainPage> {
   Widget cartButtom() {
     return FloatingActionButton(
       backgroundColor: secondaryColor,
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => CartPage()));
+      },
       child: Image.asset(
         'assets/icon_cart.png',
         width: 22,
